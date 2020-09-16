@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="350" prefWidth="640" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadoraedad.FXMLDocumentController">
+    <children>
+      <SplitPane layoutX="212.0" layoutY="221.0" prefHeight="45.0" prefWidth="228.0" />
+      <SplitPane layoutX="150.0" layoutY="60.0" prefHeight="133.0" prefWidth="219.0" />
+        <TextField fx:id="eDia" layoutX="273.0" layoutY="82.0" prefHeight="25.0" prefWidth="76.0" />
+        <TextField fx:id="eMes" layoutX="273.0" layoutY="116.0" prefHeight="25.0" prefWidth="76.0" />
+        <TextField fx:id="eAño" layoutX="273.0" layoutY="147.0" prefHeight="25.0" prefWidth="76.0" />
+        <Label layoutX="243.0" layoutY="86.0" text="Dia">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="172.0" layoutY="120.0" text="Mes (en numero)">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="240.0" layoutY="151.0" text="Año">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="286.0" layoutY="237.0" text="Edad:">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="salida" layoutX="326.0" layoutY="237.0" />
+        <Button fx:id="calcular" layoutX="423.0" layoutY="133.0" mnemonicParsing="false" onAction="#calcularEdad" prefHeight="28.0" prefWidth="114.0" text="Calcular Edad">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+        <Label layoutX="225.0" layoutY="14.0" text="Calculadora de edad">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="error" layoutX="240.0" layoutY="293.0" textAlignment="CENTER" textFill="RED" />
+      <Button layoutX="432.0" layoutY="89.0" mnemonicParsing="false" onAction="#limpiarDatos" text="Limpiar datos" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
